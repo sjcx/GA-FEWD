@@ -1,0 +1,31 @@
+body{
+  background-color: #eee;
+}
+
+.container{
+  width: 700px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+}
+
+h1{
+	color: red;
+	text-align: center;
+	background-color: yellow;
+	padding: 20px;
+	font-size: 36px;
+	font-family: helvetica, arial, sans-serif;
+}
+
+p{
+	color: red;
+}
+
+ul{
+	border: 2px solid green;
+}
+
+li em{
+	border: 1px dotted;
+}

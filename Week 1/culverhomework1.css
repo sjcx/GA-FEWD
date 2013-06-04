@@ -1,6 +1,9 @@
+body{
+	text-align: center;
+}
 h1 {
-	font-family: 'Sail', cursive;
-	font-size: xx-large;
+	font-family: 'Average Sans', sans-serif;
+	font-size: 50px;
 }
 p {
 	font-family: 'Average Sans', sans-serif;
