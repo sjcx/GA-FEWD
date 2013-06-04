@@ -1,4 +1,7 @@
-body {
-	font-family: 'Patrick Hand SC', cursive; 
-	font-weight: 400;
+h1 {
+	font-family: 'Sail', cursive;
+	font-size: xx-large;
+}
+p {
+	font-family: 'Average Sans', sans-serif;
 }
