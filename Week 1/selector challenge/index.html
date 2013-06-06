@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+  <title>Selector Challenge</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <style type="text/css">
+    body{
+      font-family: helvetica, arial, sans-serif;
+      font-size: 12px;
+      line-height: 1.3em;
+
+    }
+    .problem{
+      padding-bottom: 20px;
+      margin-bottom: 100px;
+      overflow: hidden;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .problem.correct{
+      -webkit-box-shadow: 0 0 1px 1px green;
+    }
+
+    .problem .description{
+      width: 200px;
+      float: left;
+    }
+    .problem .description .answer{
+      margin-top: 10px;
+    }
+    .problem .html{
+      width: 500px;
+      float: right;
+      overflow: hidden;
+    }
+    .problem .html .code{
+      float: left;
+      font-family: monospace;
+    }
+    .problem .html .rendered{
+      width: 100px;
+      float: left;
+    }
+    .selected{
+      background-color:yellow;
+      -webkit-box-shadow: 0 0 1px 1px yellow;
+    }
+
+
+  </style>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    $.fn.equals = function(compareTo) {
+      if (!compareTo || this.length != compareTo.length) {
+        return false;
+      }
+      for (var i = 0; i < this.length; ++i) {
+        if (this[i] !== compareTo[i]) {
+          return false;
+        }
+      }
+      return true;
+    };
+
+    $(function(){
+
+      $('.problem').each(function(){
+        html = $(this).find('.rendered')
+        $(this).find('.code').text(html.html())
+      })
+
+      $('.problem .answer input').keyup(function(){
+        value = $(this).val()
+        container = $(this).parents('.problem')
+        code = container.find('.rendered')
+        code.find('.selected').removeClass('selected')
+        result = code.find(value)
+        result.addClass('selected')
+        answer = $(this).data('answer')
+        answerResult = code.find(answer)
+        if(result.equals(answerResult))
+          container.addClass('correct')
+        else
+          container.removeClass('correct')
+      })
+
+    })
+  </script>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="problem">
+      <div class="description">
+        Select all the paragraphs.
+        <div class="answer">
+          <input type="text" data-answer="p" />
+        </div>
+      </div>
+      <div class="html">
+        <div class="rendered">
+          <h1>Title</h1>
+          <p>Hello</p>
+          <p>World</p>
+        </div>
+        <pre class="code">
+        </pre>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="problem">
+      <div class="description">
+        Select all the paragraphs that are inside of divs.
+        <div class="answer">
+          <input type="text" data-answer="div p" />
+        </div>
+      </div>
+      <div class="html">
+        <div class="rendered">
+          <p>Hello</p>
+          <p>World</p>
+          <div>
+            <h1>Hello</h1>
+            <p>world</p>
+          </div>
+        </div>
+        <pre class="code">
+        </pre>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="problem">
+      <div class="description">
+        Select all the em and strong tags.
+        <div class="answer">
+          <input type="text" data-answer="em, strong" />
+        </div>
+      </div>
+      <div class="html">
+        <div class="rendered">
+          <p>Hello <em>World</em></p>
+          <h1>Goodbye <strong>World</strong></h1>
+          <em>Foo!</em>
+        </div>
+        <pre class="code">
+        </pre>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="problem">
+      <div class="description">
+        select anything with a class of 'foo'
+        <div class="answer">
+          <input type="text" data-answer=".foo" />
+        </div>
+      </div>
+      <div class="html">
+        <div class="rendered">
+          <div class="foo">aaa</div>
+          <h1 class="foo">bbb</h1>
+          <div class="bar">ccc</div>
+          <div class="foo">
+            <div class="foo">ddd</div>
+          </div>
+        </div>
+        <pre class="code">
+        </pre>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="problem">
+      <div class="description">
+        select anything with a class of foo that is inside something with a class of foo
+        <div class="answer">
+          <input type="text" data-answer=".foo .foo" />
+        </div>
+      </div>
+      <div class="html">
+        <div class="rendered">
+          <div class="foo">aaa</div>
+          <h1 class="foo">bbb</h1>
+          <div class="bar">ccc</div>
+          <div class="foo">
+            <div class="foo">ddd</div>
+          </div>
+        </div>
+        <pre class="code">
+        </pre>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+</body>
+</html>
