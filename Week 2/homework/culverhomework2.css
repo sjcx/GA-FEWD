@@ -1,9 +1,12 @@
+html {
+	background-image: url('bitmap.png');
+	background-repeat: no-repeat;
+}
+
 body{
 	text-align: center;
 	font-family: 'Average Sans', sans-serif;
-	color: white;
-	background-image:url('background.jpg');
-	background-color:#cccccc;
+	color: Black;
 }
 
 h1{
@@ -14,7 +17,10 @@ img{
 	border-radius: 0.5em;
 }
 
-a {
+a{
 	text-decoration: none;
-	color: inherit;
+	color: Red;
+}
+a:hover{
+	color: White;
 }
