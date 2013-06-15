@@ -46,7 +46,6 @@
 	font-size: 25px;
 } 
 .left{
-	background-color: #e8e6dc;
 	float: left;
 	width: 380px;
 }
@@ -91,18 +90,18 @@
 .reviews .pic{
 	float: left;
 }
+.nathan_text, .donna_text{
+	color: #545454;
+	font-family: Helvetica;
+	font-size: 11px;
+	padding: 8px 15px 4px 28px;
+}
 .reviews .nathan_text_container{
 	float: right;
 	background-image: url("multiplexers_images/arrow1.png");
 	background-repeat: no-repeat;
 	width: 188px;
 	height: 59px;
-}
-.nathan_text{
-	color: #545454;
-	font-family: Helvetica;
-	font-size: 11px;
-	padding: 8px 15px 4px 28px;
 }
 .reviews .nathan{
 	margin-bottom: 11px;
@@ -113,12 +112,6 @@
 	background-repeat: no-repeat;
 	width: 188px;
 	height: 59px;
-}
-.donna_text{
-	color: #545454;
-	font-family: Helvetica;
-	font-size: 11px;
-	padding: 8px 15px 4px 28px;
 }
 .related_products .product{
 	float: left;
