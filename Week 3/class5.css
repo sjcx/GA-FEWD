@@ -1,0 +1,48 @@
+.container{
+
+	width: 915px;
+	margin: auto;
+}
+.profile_container{
+	width: 300px;
+	margin: auto;
+	border: 1px solid #b0b0b0;
+	border-radius: 7px;
+}
+.header{
+	background-color: #dedede;
+	text-align: center;
+	border-bottom: 1px solid #b0b0b0;
+	height: 50px;
+}
+.header h2{
+	margin: 0px;
+}
+.profile_info{
+	background-color: #ffffff;
+	overflow: hidden;
+}
+.icon{
+	height: 103px;
+	width: 100px;
+	float: left;
+}
+.icon .green{
+	width: 75px;
+	height: 75px;
+	background-color: #109e03;
+	margin: 12px auto;
+}
+.profile_container .profile{
+	float: right;
+}
+.stats{
+	background-color: #ffffff;
+	overflow: hidden;
+	border-top: 1px solid #b0b0b0;
+}
+.stats .block{
+	float: left;
+	width: 100px;
+	text-align: center;
+}
