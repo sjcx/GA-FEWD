@@ -1,33 +1,33 @@
-.container{
+.container {
 	background-color: #e8e6dc;
 	width: 800px;
 	margin: auto;
 	overflow: hidden;
 }
-.liner{
+.liner {
 	width: 645px;
 	margin: auto;
 }
-.right .reviews, .nathan, .donna, .menu, .container, .photo, .nathan_text_container, .donna_text_containter{
+.right .reviews, .nathan, .donna, .menu, .container, .photo, .nathan_text_container, .donna_text_containter {
 	overflow: hidden;
 }
-.header{
+.header {
 	border: 3px solid #65bcc9;
 	border-radius: 5px;
 	margin: 20px 0 0 0;
 }
-.header, .menu, .menu_item{
-	background-color: #65bcc9;	
+.header, .menu, .menu_item {
+	background-color: #65bcc9;
 }
-.header .logo{
+.header .logo {
 	background-image: url("multiplexers_images/dots.png");
 	margin: auto;
 	background-color: #95c8cf;
 }
-.logo img{
+.logo img {
 	padding: 18px 86px 10px;
 }
-.header .menu .menu_item{
+.header .menu .menu_item {
 	float: left;
 	width: 127px;
 	text-align: center;
@@ -39,42 +39,42 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-.page_title{
+.page_title {
 	background-color: #e8e6dc;
 	margin: 0px;
 	color: #38210d;
 	font-size: 25px;
-} 
-.left{
+}
+.left {
 	float: left;
 	width: 380px;
 }
-.left .photo{
+.left .photo {
 	float: left;
 	background-color: #ffffff;
 	width: 380px;
-	height: 290px;	
+	height: 290px;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
-.photo img{
+.photo img {
 	position: relative;
 	top: 10px;
 	left: 10px;
 }
-.left .caption{
+.left .caption {
 	float: left;
 	color: #38210d;
-	font-family:"Times New Roman", Times, serif;
+	font-family: "Times New Roman", Times, serif;
 	padding-top: 10px;
 }
-.right{
+.right {
 	background-color: #dbd7c5;
 	float: right;
 	width: 250px;
 	margin-right: -6px;
 	margin-bottom: 100px;
 }
-.right h5{
+.right h5 {
 	text-transform: uppercase;
 	color: #38210d;
 	font-family: Arial, Helvetica, sans-serif;
@@ -84,36 +84,27 @@
 	left: 8px;
 	margin: 0;
 }
-.reviews, .related_products{
+.reviews, .related_products {
 	margin: 20px 10px 3px 10px;
 }
-.reviews .pic{
+.reviews .pic {
 	float: left;
 }
-.nathan_text, .donna_text{
+.text {
 	color: #545454;
 	font-family: Helvetica;
 	font-size: 11px;
-	padding: 8px 15px 4px 28px;
+	padding: 8px 15px 4px 11px;
 }
-.reviews .nathan_text_container{
+.reviews .text_container {
 	float: right;
-	background-image: url("multiplexers_images/arrow1.png");
-	background-repeat: no-repeat;
 	width: 188px;
 	height: 59px;
 }
-.reviews .nathan{
+.reviews .nathan {
 	margin-bottom: 11px;
 }
-.reviews .donna_text_containter{
-	float: right;
-	background-image: url("multiplexers_images/arrow2.png");
-	background-repeat: no-repeat;
-	width: 188px;
-	height: 59px;
-}
-.related_products .product{
+.related_products .product {
 	float: left;
 	background-color: #FFFFFF;
 	width: 110px;
@@ -121,11 +112,88 @@
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
-.product img{
+.product img {
 	position: relative;
 	top: 10px;
 	left: 10px;
 }
-.related_products{
+.related_products {
 	margin-right: -10px;
 }
+.nathan_bubble {
+	position: relative;
+	margin-left: 6px;
+	width: 178px;
+	height: 58px;
+	padding: 0px;
+	background: #FFFFFF;
+	border: #bab7a4 solid 1px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.nathan_bubble:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -7px;
+	border-style: solid;
+	border-width: 8px 7px 8px 0;
+	border-color: transparent #FFFFFF;
+	display: block;
+	width: 0;
+	z-index: 1;
+}
+
+.nathan_bubble:before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -8px;
+	border-style: solid;
+	border-width: 8px 7px 8px 0;
+	border-color: transparent #bab7a4;
+	display: block;
+	width: 0;
+	z-index: 0;
+}
+.donna_bubble {
+	position: relative;
+	margin-left: 6px;
+	width: 178px;
+	height: 40px;
+	padding: 0px;
+	background: #FFFFFF;
+	border: #bab7a4 solid 1px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.donna_bubble:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -7px;
+	border-style: solid;
+	border-width: 8px 7px 8px 0;
+	border-color: transparent #FFFFFF;
+	display: block;
+	width: 0;
+	z-index: 1;
+}
+
+.donna_bubble:before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -8px;
+	border-style: solid;
+	border-width: 8px 7px 8px 0;
+	border-color: transparent #bab7a4;
+	display: block;
+	width: 0;
+	z-index: 0;
+}
+
