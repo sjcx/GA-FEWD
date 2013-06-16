@@ -1,5 +1,7 @@
-.container {
+html{
 	background-color: #e8e6dc;
+}
+.container {
 	width: 800px;
 	margin: auto;
 	overflow: hidden;
