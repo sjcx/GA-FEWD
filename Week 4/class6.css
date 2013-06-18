@@ -1,0 +1,36 @@
+
+body{
+  background-color: #eee;
+}
+
+.container{
+  width: 850px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+}
+nav ul{
+	overflow: hidden;	
+	list-style-type: none;
+}
+nav ul a{
+	transition: all 0.5s ease-in;
+	color: #ffffff;
+	display: block;
+	float: left;
+	background-color: #aaa;
+	width: 75px;
+	text-decoration: none;
+	text-align: center;
+	margin-left: 10px;
+	padding: 10px 20px;
+	font-family: Helvetica;
+	border-radius: 5px;
+}
+nav ul a:hover{
+	background-color: #33848F;
+}
+nav ul li:first-child a{
+	margin-left: 0;
+}
+
