@@ -1,19 +1,64 @@
-nav {
-  width: 80%;
-  height: 23px;
+$main-color: #e8e6dc;
+$header-color: #65bcc9;
+$font: Helvetica;
+
+html{
+  background-color: $main-color;
+}
+.container {
+  width: 800px;
+  margin: auto;
+  overflow: hidden;
   
-  ul { list-style-type: none; }
-  li {
-    float: left;
-    margin: 20px;
-    background-color: Grey;
-    border-radius: 4px;
-    a { 
-      font-weight: bold; 
-      text-decoration: none;
-      color:white;
-      padding: 10px;
-      &:hover { background-color: blue; }
-    }
+  .liner{
+    width: 645px;
+    margin: auto;
   }
 }
+ .menu, .container, .liner, .photo {
+  overflow: hidden;
+}
+.header {
+  border: 3px solid $header-color;
+  border-radius: 5px;
+  margin: 20px 0 0 0;
+}
+
+.menu, .menu_item, .header{
+  background-color: $header-color;
+}
+.header{
+  .menu{
+    $menu-width: 100%;
+    $items: 5;
+    .menu_item{
+      float: left;
+      width: $menu-width/$items;
+      color: #33848f;
+      font: {
+        family: $font;
+        size: 14px;
+      }
+      text:{
+        align: center;
+        transform: uppercase;
+        shadow: 1px 1px #98cfd9;
+      }
+      padding: {
+        top: 10px;
+        bottom: 10px;
+      } 
+    }
+  }
+  .logo{
+    background-image: url("dots.png");
+    margin: auto;
+    background-color: #95c8cf;
+  
+    img { padding: 18px 86px 10px; }
+  } 
+}
+
+ 
+
+

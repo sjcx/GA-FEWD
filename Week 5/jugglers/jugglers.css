@@ -1,0 +1,70 @@
+html {
+	background-color: #f0efeb;
+}
+.container header {
+	width: 100%;
+	background-color: #697985;
+}
+.header_container, .search_icon {
+	overflow: hidden;
+}
+.container header .header_container, .container_liner {
+	width: 940px;
+	margin: auto;
+}
+.header_container .header_links {
+	text-align: right;
+	color: white;
+	width: 100%;
+}
+.header_container .logo {
+	float: left;
+	margin: 20px 0 0 75px;
+}
+.header_container .search {
+	float: right;
+	width: 300px;
+}
+.header_container .search form .input {
+	float: left;
+	border: none;
+	height: 48px;
+	width: 225px;
+	font-family: Helvetica;
+	font-size: 20px;
+	margin: 5px;
+	padding-left: 5px;
+}
+.header_container .search .search_icon {
+	float: right;
+}
+.search_icon img {
+	position: relative;
+	top: 18px;
+	right: 19px;
+	z-index: 3;
+}
+.container header .search {
+	background-color: #596670;
+}
+.container_liner .profile {
+	width: 300px;
+	float: left;
+}
+.profile .profile_inner {
+	background-color: #e6f0f2;
+	position: relative;
+	top: 80px;
+	left: 80px;
+	width: 220px;
+}
+.profile .profile_inner img {
+	position: relative;
+	top: -20px;
+	left: 20px;
+}
+.profile p:nth-child(2){
+	position: relative;
+	top: 100px;
+	left: 80px;
+}

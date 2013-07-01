@@ -1,0 +1,86 @@
+html {
+	background-color: #D4D5D6;
+}
+header {
+	background-color: #C2A372;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	margin: 0px auto;
+	font-family: Arial;
+	font-weight: bold;
+	color: #4A3F2E;
+	padding: 20px 0 20px 30px;
+	opacity: 0.9;
+	z-index: 2;
+}
+
+.container {
+	background-color: white;
+	width: 960px;
+	margin: 100px auto;
+}
+.container .title_container {	
+	margin: auto;
+	padding-top: 30px;
+	font-family: helvetica, arial, sans-serif;
+}
+.container .template {
+	background: red;
+	background: -moz-linear-gradient(top, #e3e3e3, #c8c8c8);
+	background: -webkit-gradient(linear, left top, left bottombottom, from(#e3e3e3), to(#c8c8c8));
+	padding: 10px 20px;
+	margin-left: -20px;
+	margin-top: 0;
+	position: relative;
+	width: 70%;
+	-moz-box-shadow: 1px 1px 3px #292929;
+	-webkit-box-shadow: 1px 1px 3px #292929;
+	box-shadow: 1px 1px 3px #292929;
+	color: white;
+	font-weight: bold;
+}
+.arrow{
+     width: 0; height: 0;  
+     line-height: 0;  
+     border-left: 20px solid transparent;  
+     border-top: 10px solid rgb(224, 149, 149);  
+     top: 104%;  
+     left: 0;  
+     position: absolute;    
+}
+hr {
+	width: 900px;
+	position: relative;
+	top: 20px;
+}
+.bubble_wrap {
+	width: 550px;
+	overflow: hidden;
+	margin: 30px auto;
+	position: relative;
+}
+.avatar {
+	position: absolute;
+	bottom: 30px;
+	left: 40px;
+}
+.carrot {
+	position: absolute;
+	bottom: 44px;
+	left: 116px;
+	z-index: 1;
+}
+.bubble {
+	border: 2px solid #B9C7D0;
+	background-color: #F6F8F9;
+	border-radius: 10px;
+	width: 400px;
+	float: right;
+	text-align: center;
+	font-family: Arial;
+	line-height: 5px;
+	position: relative;
+	margin-bottom: 30px;
+}

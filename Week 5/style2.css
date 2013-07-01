@@ -1,0 +1,42 @@
+#content {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 85%;
+	overflow: hidden;
+	height: 100%;
+	width: 960px;
+	height: 482px;
+	margin: auto;
+}
+#content  .block {
+	width: 300px;
+	height: 221px;
+	float: left;
+	margin: 10px;
+	-webkit-transition: all .2s ease-in-out;
+}
+.block:hover{
+	-webkit-transform: scale(1.04); 
+}
+
+.sample {
+	height: 185px;
+}
+.articlename {
+	height: 50px;
+	text-align: right;
+}
+.shortsample {
+	height: 165px;
+}
+.longtitle {
+	height: 70px;
+	text-align: right;
+}
+a:link, a:visited {
+	text-decoration: none;
+	color: black;
+}
+a:hover, a:active {
+	text-decoration: none;
+	color: #FA2069;
+}

@@ -1,0 +1,28 @@
+@media (max-width: 700px) and (min-width: 200px) {
+	p{
+		color: blue;
+	}
+	img{
+		width: 175%;
+	}
+}
+body{
+  background-color: #eee;
+}
+
+.container{
+  width: 700px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+}
+.fb{
+	background-image: url("sprite.png");
+	display: block;
+	width: 324px;
+	height: 56px;
+}
+.fb:hover{
+	background-position: bottom;
+}
+
