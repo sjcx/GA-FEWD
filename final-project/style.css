@@ -1,3 +1,5 @@
+body { font-family: "museo-sans"; }
+
 header { width: 100%; }
 
 .header_container { width: 960px; margin: auto; padding-top: 10px; overflow: hidden; }
