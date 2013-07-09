@@ -1,0 +1,158 @@
+header{
+  width: 100%;
+}
+
+.header_container{
+  width: 960px;
+  margin: auto;
+  padding-top: 10px;
+  overflow: hidden;
+  
+  .header_nav{
+    float: right;
+    width: 100%;
+    text-align: right;
+    
+    li{
+      display: inline;
+      
+     .active{
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+  
+  .logo{
+    float: left;
+    width: 650px;
+    
+    .logo_img{
+      float: left;
+      overflow: hidden;
+      background-color: #C4C4C4;
+      text-align: center;
+      color: #696667;
+      width: 150px;
+      height: 100px;
+    }
+    h1{
+      float: left;
+      margin: 50px 0 0 20px;
+      font-size: 2em;
+    }
+  }
+  
+  .search{
+    float: right;
+    margin-top: 55px;
+  }
+}
+
+.container{
+   width: 960px;
+   margin: auto;
+   
+   .main_nav{
+     $navbar-width: 100%;
+     $items: 6;
+     
+     width: $navbar-width;
+     overflow: hidden;
+     margin: 15px 0 15px 0;
+     
+    .level_1{
+       display: inline;
+       float: left;
+       width: $navbar-width/$items;
+       text-align: center;
+       list-style-type: none; 
+       
+       .level_2{
+         li{ list-style-type: none;}
+       }
+     }      
+    }
+}
+  
+.slider{
+  background-color: #C4C4C4;
+  text-align: center;
+  color: #696667;
+  height: 350px;
+}
+.news{
+  
+  h2{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px 0 10px 0;
+  }
+  
+  ul{
+    width: 480px;
+    margin: auto;
+    list-style-type: none;
+    
+    li{
+      overflow: hidden;
+      margin-bottom: 10px;
+      
+      .date{
+        float: left;
+        width: 125px;
+        font-weight: bold;
+        text-align: right;
+      }
+      .text{
+        float: right;
+        width: 340px;
+      }
+    }
+  }
+  
+  p{
+    width: 480px;
+    margin: 20px auto;
+    text-align: right;
+  }
+}
+
+.social_media{
+  margin-top: 50px;
+  
+  ul{
+    width: 176px;
+    margin: auto;
+    list-style-type: none;
+    
+    li{
+      display: inline;
+    }
+  }
+}
+
+.footer{
+  margin-top: 20px;
+  border-top: 1px solid black;
+  padding-top: 24px;
+  
+  .footer_nav{
+    float: left;
+    width: 600px;
+    
+    ul{
+      list-style-type: none;
+      
+      li{
+        display: inline;
+      }
+    }
+  }
+  
+  .footer_logo{
+    float: right;
+    margin: -5px 0 15px 0;
+  }
+  
+}
