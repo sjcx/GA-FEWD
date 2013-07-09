@@ -1,5 +1,10 @@
 $main-font: "museo-sans";
 
+@mixin small-nav-font{
+  font-size: small;
+  text-transform: uppercase;
+}
+
 body{
   font-family: $main-font;
 }
@@ -19,6 +24,8 @@ header{
     float: right;
     width: 100%;
     text-align: right;
+    @include small-nav-font;
+    
     
     li{
       display: inline;
@@ -67,6 +74,7 @@ header{
      width: $navbar-width;
      overflow: hidden;
      margin: 15px 0 15px 0;
+     @include small-nav-font;
      
     .level_1{
        display: inline;
@@ -146,7 +154,8 @@ header{
   
   .footer_nav{
     float: left;
-    width: 600px;
+    width: 626px;
+    @include small-nav-font;
     
     ul{
       list-style-type: none;

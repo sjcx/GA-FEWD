@@ -3,7 +3,7 @@ body { font-family: "museo-sans"; }
 header { width: 100%; }
 
 .header_container { width: 960px; margin: auto; padding-top: 10px; overflow: hidden; }
-.header_container .header_nav { float: right; width: 100%; text-align: right; }
+.header_container .header_nav { float: right; width: 100%; text-align: right; font-size: small; text-transform: uppercase; }
 .header_container .header_nav li { display: inline; }
 .header_container .header_nav li .active { text-decoration: none; color: black; }
 .header_container .logo { float: left; width: 650px; }
@@ -12,7 +12,7 @@ header { width: 100%; }
 .header_container .search { float: right; margin-top: 55px; }
 
 .container { width: 960px; margin: auto; }
-.container .main_nav { width: 100%; overflow: hidden; margin: 15px 0 15px 0; }
+.container .main_nav { width: 100%; overflow: hidden; margin: 15px 0 15px 0; font-size: small; text-transform: uppercase; }
 .container .main_nav .level_1 { display: inline; float: left; width: 16.66667%; text-align: center; list-style-type: none; }
 .container .main_nav .level_1 .level_2 li { list-style-type: none; }
 
@@ -30,7 +30,7 @@ header { width: 100%; }
 .social_media ul li { display: inline; }
 
 .footer { margin-top: 20px; border-top: 1px solid black; padding-top: 24px; }
-.footer .footer_nav { float: left; width: 600px; }
+.footer .footer_nav { float: left; width: 626px; font-size: small; text-transform: uppercase; }
 .footer .footer_nav ul { list-style-type: none; }
 .footer .footer_nav ul li { display: inline; }
 .footer .footer_logo { float: right; margin: -5px 0 15px 0; }
