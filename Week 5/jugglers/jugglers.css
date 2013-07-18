@@ -63,8 +63,24 @@ html {
 	top: -20px;
 	left: 20px;
 }
-.profile p:nth-child(2){
+.profile .profile_inner h2 {
 	position: relative;
-	top: 100px;
-	left: 80px;
+	top: -59px;
+	left: 106px;
+}
+.profile .profile_inner .profile_nav {
+	position: relative;
+	top: -38px;
+}
+.profile .profile_inner h4 {
+	position: relative;
+	bottom: -82px;
+	left: 81px;
+}
+.container_liner .recent_posts{
+	background-color: #deddd7;
+	width: 380px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 83px;
 }
